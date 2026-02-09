@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Gallery - PNGs</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="function-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1>Lorem Ipsum Digital Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="png.html"><b>PNGs</b></a>
+            <a href="svg.html">SVGs</a>
+            <a href="jpg.html">JPG/JPEGs</a>
+            <a href="gif.html">GIFs</a>
+            <a href="others.html">Others</a>
+        </nav>
+
+    </header>
+    
+    <main>
+        <h2>PNG Images</h2>
+        <hr>
+        <p>What is a PNG? A .png (Portable Network Graphics) is an image file type that supports lossless data compression,
+            designed/used for web graphics and many other general applications. It retains high image quality while also supporting complex details, such as transparency.</p>
+            <br>
+        <p>PNGs are most presently seen in digital/online art applications, web design, and even screenshots from devices. PNGs also support over 16 million colors,
+             easily allowing for detailed graphics or illustrations. </p>
+                <br>
+            
+        <div class="display">
+            <div class="row">
+                <img src="png/curacao.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="png/greenland.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="png/iceland.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+        </div>
+        
+        <div id="m1" class="modal">
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="slides">
+                    <img src="png/curacao.png" alt="A sunny day at Curacao Beach">
+                </div>
+                <div class="slides">
+                    <img src="png/greenland.png" alt="Greenland's Icy Landscape, with a polar bear">
+                </div>
+                <div class="slides">
+                    <img src="png/iceland.png" alt="Icelandic Glacier, with unique 'banding' and a bright blue color">
+                </div>
+
+                <a class="prev" onclick="countSlides(-1)">&#10094;</a>
+                <a class="next" onclick="countSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <h6 class="instructions">Click on the images to view them in full size.</h6>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 Lorem Ipsum Inc. All rights reserved.</p>
+        <p>All Images belong to their respective owners.</p>
+        <br>
+        <p>If you have any questions, concerns, or comments, contact us at <span class="lighter">info@example.com</span> or at <span class="lighter">+1 (800) 555‑0101</span></p>
+            <style>
+                .lighter {
+                    color: rgb(138, 169, 253);
+                }
+            </style>
+    </footer>
+  </body>
+</html>

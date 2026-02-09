@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Gallery - JPGs</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="function-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1>Lorem Ipsum Digital Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="png.html">PNGs</a>
+            <a href="svg.html">SVGs</a>
+            <a href="jpg.html"><b>JPG/JPEGs</b></a>
+            <a href="gif.html">GIFs</a>
+            <a href="others.html">Others</a>
+        </nav>
+
+    </header>
+    
+    <main>
+        <h2>JPG and JPEG Images</h2>
+        <hr>
+        <p>What's a JPG? A .jpeg (Joint Photographic Experts Group), sometimes labeled as .jpg, is an image file format that uses lossy compression to reduce file size, but sacrifices transparency as a feature.</p>
+            <br>
+        <p>JPGs are most commonly used for photographs and images with complex color gradients. They are widely supported across all web browsers and devices, making them a popular choice for web developers, designers, and photographers.
+            Below the images will be a comparison of JPGs and PNGs.
+        </p>
+        <br>
+
+        <div class="display">
+            <div class="row">
+                <img src="jpg/forest.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="jpg/waterfall.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="jpg/" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+        </div>
+        <div id="m1" class="modal">
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="slides">
+                    <img src="jpg/forest.jpg" alt="A Cave-filled Forest in China">
+                </div>
+                <div class="slides">
+                    <img src="jpg/waterfall.jpg" alt="An exotic waterfall by Angel Falls">
+                </div>
+                <div class="slides">
+                    <img src="jpg/" alt="">
+                </div>
+
+                <a class="prev" onclick="countSlides(-1)">&#10094;</a>
+                <a class="next" onclick="countSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <h6 class="instructions">Click on the images to view them in full size.</h6>
+        <br>
+
+        <div class="comparison-container">
+            <div class="comparison-grid">
+                <div class="i1"><b>Feature</b></div>
+                <div class="i2"><b>JPGs</b></div>
+                <div class="i3"><b>PNGs</b></div>
+                <div class="i4">Compression Type</div>
+                <div class="i5">Lossy</div>
+                <div class="i6">Lossless</div>
+                <div class="i7">Image Quality</div>
+                <div class="i8">Some quality lost to reduce file size</div>
+                <div class="i9">No quality loss when saved</div>
+                <div class="i10">File Size</div>
+                <div class="i11">Smaller</div>
+                <div class="i12">Larger</div>
+                <div class="i13">Transparency Support</div>
+                <div class="i14">None</div>
+                <div class="i15">Yes</div>
+                <div class="i16">Best Used For</div>
+                <div class="i17">Photographs, complex color gradients</div>
+                <div class="i18">Web graphics, images with transparency</div>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 Lorem Ipsum Inc. All rights reserved.</p>
+        <p>All Images belong to their respective owners.</p>
+        <br>
+        <p>If you have any questions, concerns, or comments, contact us at <span class="lighter">info@example.com</span> or at <span class="lighter">+1 (800) 555‑0101</span></p>
+            <style>
+                .lighter {
+                    color: rgb(138, 169, 253);
+                }
+            </style>
+    </footer>
+  </body>
+</html>
