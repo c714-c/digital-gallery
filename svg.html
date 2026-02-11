@@ -35,9 +35,9 @@
             <br>
         <div class="display">
             <div class="row">
-                <img src="svg/" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="svg/" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                <img src="svg/" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="svg/car.svg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="svg/compass.svg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="svg/debian.svg" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
         </div>
         <div id="m1" class="modal">
@@ -45,13 +45,22 @@
                 <span class="close cursor" onclick="closeModal()">&times;</span>
 
                 <div class="slides">
-                    <img src="svg/" alt="">
+                    <figure>
+                        <figcaption>Car SVG</figcaption>
+                        <img src="svg/car.svg" alt="">
+                    </figure>
                 </div>
                 <div class="slides">
-                    <img src="svg/" alt="">
+                    <figure>
+                        <figcaption>Compass SVG</figcaption>
+                        <img src="svg/compass.svg" alt="">
+                    </figure>
                 </div>
                 <div class="slides">
-                    <img src="svg/" alt="">
+                    <figure>
+                        <figcaption>Debian Logo SVG</figcaption>
+                        <img src="svg/debian.svg" alt="">
+                    </figure>
                 </div>
 
                 <a class="prev" onclick="countSlides(-1)">&#10094;</a>

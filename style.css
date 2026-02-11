@@ -68,6 +68,12 @@ hr{
     height: 120px;
 }
 
+.note{
+    margin: 0px 70px 0px 70px;
+    color: gray;
+    text-align: center;
+}
+
 .welcome{
     text-align: center;
     display: flex;
@@ -77,6 +83,9 @@ hr{
 
 .featured{
     margin-top: 30px;
+}
+.featured h3{
+    margin: 5px;
 }
 
 .homepage-featured{
@@ -108,7 +117,6 @@ hr{
 .display img{
     width: 300px;
     height: 220px;
-    border-radius: 40px;
     border: outset black 4px;
     box-shadow: 2px 2px 8px;
 }
