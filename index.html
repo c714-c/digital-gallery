@@ -35,14 +35,43 @@
         <div class="featured">
             <h3>Featured Images:</h3>
             <div class="homepage-featured">
-                <img src="other/tallinn.avif" alt="Cathedral in Estonia" width="300px">
-                <img src="jpg/forest.jpg" alt="Forest Pathway in China" width="300px">
-                <img src="png/greenland.png" alt="Greenland Ice Landscape" width="300px">
+                <img src="other/tallinn.avif" alt="Cathedral in Estonia" width="300px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="jpg/forest.jpg" alt="Forest Pathway in China" width="300px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="png/greenland.png" alt="Greenland Ice Landscape" width="300px" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
         </div>
-        <div class="spacer"></div>
-        <p class="note"><i>Please note that this isn't a traditional gallery, but rather a gallery of general images and examples, organized and showcased by their different file types.</i></p>
+
+        <div id="m1" class="modal">
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="slides">
+                    <figure>
+                        <img src="other/tallinn.avif" alt="Alexander Nevsky Cathedral in Tallinn, Estonia">
+                        <figcaption>Alexander Nevsky Cathedral in Tallinn, Estonia. As seen on 'Others' page.</figcaption>
+                    </figure>
+                </div>
+                <div class="slides">
+                    <figure>
+                        <img src="jpg/forest.jpg" alt="Forest Pathway in China">
+                        <figcaption>Forest Pathway in China. As seen on 'JPG' page.</figcaption>
+                    </figure>
+                </div>
+                <div class="slides">
+                    <figure>
+                        <img src="png/greenland.png" alt="Greenland Ice Landscape">
+                        <figcaption>Greenland Ice Landscape. As seen on 'PNG' page.</figcaption>
+                    </figure>
+                </div>
+
+                <a class="prev" onclick="countSlides(-1)">&#10094;</a>
+                <a class="next" onclick="countSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="spacer"></div>
+    <p class="note"><i>Please note that this isn't a traditional gallery, but rather a gallery of general images and examples, organized and showcased by their different file types.</i></p>
 
     <div class="spacer"></div>
 
